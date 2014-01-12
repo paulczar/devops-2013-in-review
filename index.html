@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>Hey IDIOT! change your title</title>
+		<title>Bro do you even DevOp?</title>
 
 		<meta name="description" content="description of presentation">
 		<meta name="author" content="Paul Czarkowski">
@@ -37,59 +37,195 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
-					<h2>I did a thing</h2>
-					<h3>so I guess I should talk about it.</h3>
+					<h2> << DevOps - 2013 in review >> </h2>
 					<p>
 						<small>Created by <a href="http://tech.paulcz.net">Paul Czarkowski</a> / <a href="http://twitter.com/pczarkowski">@pczarkowski</a></small>
 					</p>
 				</section>
 
 				<section>
-					<h2>I am not a DevOp</h2>
- 					<p>what even is?</p>
- 					<p><img src="images/sysadmin.jpg"><br>
+					<h3>We learned that DevOps is more than<br> giving root to developers.</h3>
+ 					<p><img src="images/sandwich.png"><br><i><small>http://xkcd.com/149/</small></i><br>
+					<pre><code>alias devops=sudo # devops	</code></pre>
+					<p><a href="http://puppetlabs.com/blog/download-devops-and-other-wince-worthy-faux-pas">http://puppetlabs.com/blog/download-devops-and-other-wince-worthy-faux-pas</a>
 				</section>
 
 				<section>
-					<h2>Title</h2>
- 					<h3>subtest</h3>
- 					<ul class="fragment">
- 						<li>point 1
- 						<li>point 2
- 					</ul>
-				</section>
-
-				<section>
-				  <h2>Code!</h2>
+					<h3>We fought valiant battles with ruby</h3>
 					<pre class="stretch"><code>
-#!/bin/bash
+$ sudo gem install nokigiri
+Building native extensions.  This could take a while...
+ERROR:  Error installing nokogiri:
+  ERROR: Failed to build gem native extension.
 
-echo This is a pure code slide.
-					</code></pre>
+        /Users/xzxx/.rvm/rubies/ruby-1.9.3-p429/bin/ruby extconf.rb
+Extracting libxml2-2.8.0.tar.gz into tmp/x86_64-apple-darwin13.0.0/ports/libxml2/2.8.0... OK
+Running 'configure' for libxml2 2.8.0... OK
+Running 'compile' for libxml2 2.8.0... OK
+Running 'install' for libxml2 2.8.0... OK
+Activating libxml2 2.8.0 (from /Users/xxx/.rvm/gems/ruby-1.9.3-p429/gems/nokogiri-1.6.0/ports/x86_64-apple-darwin13.0.0/libxml2/2.8.0)...
+Extracting libxslt-1.1.26.tar.gz into tmp/x86_64-apple-darwin13.0.0/ports/libxslt/1.1.26... OK
+Running 'configure' for libxslt 1.1.26... OK
+Running 'compile' for libxslt 1.1.26... OK
+Running 'install' for libxslt 1.1.26... OK
+Activating libxslt 1.1.26 (from /Users/xxx/.rvm/gems/ruby-1.9.3-p429/gems/nokogiri-1.6.0/ports/x86_64-apple-darwin13.0.0/libxslt/1.1.26)...
+checking for libxml/parser.h... *** extconf.rb failed ***
+Could not create Makefile due to some reason, probably lack of
+necessary libraries and/or headers.  Check the mkmf.log file for more
+details.  You may need configuration options.
+				</code></pre>
 				</section>
 
+				<section>
+					<h3>We fought valiant battles with ruby</h3>
+					<pre class="stretch"><code>
+$ echo 'fuck you nokogiri' && \ 
+    sudo apt-get -y install build-essential libxslt-dev libxml2-dev
+
+fuck you nokogiri
+
+Reading package lists... Done
+...
+...
+$ sudo gem install nokogiri
+Building native extensions.  This could take a while...
+...
+...
+Successfully installed nokogiri 
+6 gems installed
+
+				</code></pre>
+				</section>
 
 				<section>
-					<h2>Summary slide - you did a thing ... so what ?</h2>
+					<h3>We learned that devops is more than just</h3>
+ 					<p><img src="images/automate_all_the_things.png"><br>
+					<img src="images/DevOps_Borat12.png"><br>
+					<p><a href="http://www.slideshare.net/xebialabs/devopsdays-atlanta2013">Losing Sight of DevOps in an Automation Forest</a></p>
+				</section>
+
+				<section>
+				    <p><img src="images/download-devops.jpg">
+				</section>
+
+				<section>
+				  <h3>But not for lack of trying</h3>
+				    <p><img src="images/download_devops.png">
+				</section>			
+
+				<section>
+				  <h2>We were reminded that...</h2>
+				  <h3>Devops is about inclusiveness</h3>
+				  <blockquote cite="http://www.cryptocracy.com/blog/2013/11/23/dick-jokes-and-devops/">
+"I just wanted to point out that your dick joke, which
+I’m quite certain isn’t intended to be malicious in any way, doesn’t
+do anything whatsoever to help the gender diversity problem that we
+have in technology, and most especially in technical operations."
+</blockquote><p>Mark Imbriaco - Devops Mailling list
+				<p><a href="http://www.cryptocracy.com/blog/2013/11/23/dick-jokes-and-devops">http://www.cryptocracy.com/blog/2013/11/23/dick-jokes-and-devops</a>
+				</section>
+
+				<section>
+					<h2>We were reminded that...</h2>
+					<h3>"There is no talent shortage"</h3>
+ 					<p><img src="images/talent_shortage.png"><br>
+					<p><a href="http://www.slideshare.net/littleidea/there-is-no-talent-shortage-velocity-2013">http://www.slideshare.net/littleidea/there-is-no-talent-shortage-velocity-2013</a></p>
+				</section>
+
+				<section>
+					<h2>Recruiters went full retard</h2>
+					<img src="images/Never-Go-Full-Retard.jpg">
 					<ul>
-					 <li>1
-					 <li>2
-					</ul>
+					<li>http://shit-recruiters-say.tumblr.com
+					<li>https://twitter.com/recruiterbro
+					<li>https://twitter.com/shitrecruiters
+				</section>
+
+				<section>
+					<h2>Recruiters went full retard</h2>
+					<p><img src="images/mensa_recruiter.png">
+					<p><a href="https://twitter.com/petecheslock/status/387300639371710464">@petecheslock</a>
+					<p><a href="http://www.slideshare.net/petecheslock/3-pete-cheslock-recruiting-is-broken-how-do-we-fix-it">http://www.slideshare.net/petecheslock/3-pete-cheslock-recruiting-is-broken-how-do-we-fix-it</a>
 				</section>
 
 
 				<section>
-					<h2>Links</h2>
-					<p><a href="http://tech.paulcz.net">http://tech.paulcz.net</a></p><br>
-					<ul>
-						<li><a href="http://tech.paulcz.net">Link 1</a></li>
-					</ul>
+					<h3>The Puppet Vs Chef war was won...</h3><br>
+ 					<p class="fragment"><img src="images/saltstack_logo.jpg"><br>
+ 					<p class="fragment">Just Kidding!  There is no war.<br>
 				</section>
 
 				<section>
-					<h1>THE END</h1>
-					<h3>BY Paul Czarkowski  / @pczarkowski </h3>
+					<h3>We shaved a metric fuckton of yaks</h3><br>
+ 					<p><img src="images/yaks.jpg"><br>
+				</section>				
+
+				<section>
+					<h3>We were reminded that you can't<br> buy a devops!</h3>
+ 					<p><img src="images/selldevops.png"><br>
 				</section>
+
+				<section>
+				  <h2>But you can certainly sell one!</h2><br><br>
+				  <ul>
+				    <li>http://www.ibm.com/developerworks/devops/
+				    <li>http://www.collab.net/HP/DevOps
+						<li>http://www.rackspace.com/devops/
+				</section>				    
+
+				<section>
+				  <h3>We learned what DevOps really means</h3><br>
+				  <blockquote>"Devops means giving a shit about your job enough to not pass the buck. Devops means giving a shit about your job enough to want to learn all the parts and not just your little world."</blockquote>
+				  - <a href="http://blog.lusis.org/blog/2013/06/04/devops-the-title-match/">http://blog.lusis.org/blog/2013/06/04/devops-the-title-match/</a>
+				</section>		
+
+				<section>
+				  <h3>We learned what DevOps really means</h3><br>
+				  <blockquote>"Devops means working to continuously improve yourself and your sphere of influence"</blockquote>
+				  - Me ...  just now.<br>
+				</section>
+
+				<section>
+				  <h3>We learned what DevOps really means</h3><br>
+				  <p>DevOps = Dev + Ops <span class="fragment"> + <b> Business</b> <br>
+				  <img src="images/the-goal-image.jpg">
+				  <img src="images/money-bags.jpg">
+				  </span>
+				</section>
+
+				<section>
+				  <h3>Nathan Harvey told us to<br>"Quit Your Job!"</h3><br>
+				  <p><a href="https://speakerdeck.com/nathenharvey/quit-your-job">https://speakerdeck.com/nathenharvey/quit-your-job</a>
+				  <p>Those of us that took that advice prospered!
+				</section>
+
+				<section>
+				  <h3>We learned how to save an ailing auto-parts retailer</h3><br>
+				  <img src="images/PPhardcover.png">
+				  <p class="fragment">and we swore to never again be a `Brent`</p>
+				</section>
+
+  				<section>
+				  <h3>We learned that there's no such <br> person as a DevOp</h3>
+				  <blockquote>
+				  "When you are the Head of DevOps, you 'own' DevOps. If DevOps fails, it is your failure, when it should be a failure of the entire company to change, adapt, and accept the cultural shift."
+				  </blockquote>
+				  <p><a href="http://dyn.com/blog/devops-in-your-job-title-is-doing-you-harm/">
+				  http://dyn.com/blog/devops-in-your-job-title-is-doing-you-harm/</a>
+				</section>
+
+				<section>
+				  <h3>We learned that there's no such <br> person as a DevOp</h3>
+				  <br>
+				  <table style="margin: 0px auto;">
+				  <tr><td><strike>DevOps Engineer</strike> <td> SysAdmin
+				  <tr><td><strike>DevOps Team</strike> <td> SysAdmin Team
+				  <tr><td><strike>Director of Devops</strike> <td> Washed up SysAdmin
+				  <tr><td><strike>Devops Consultant</strike> <td> Cash Cow
+				  </table>
+				  <br>
+				  <p><a href="https://github.com/petecheslock/devops-to-sysadmin">Chrome Extenstion that replaces 'devops' with 'sysadmin'</a></p>
+				 </section>
 
 			</div>
 
